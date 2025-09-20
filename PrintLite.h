@@ -19,10 +19,8 @@ public:
     write('\n'); // Add newline character
     return len + 1; // Return total length including newline
   }
-  virtual void flush(); // Declaration only, implementation moved to .cpp
-  virtual size_t write(const uint8_t *buffer, size_t size);
-  virtual size_t print(const char *str);
-  virtual size_t println(const char *str);
+  virtual void flush(){}; // Declaration only, implementation moved to .cpp
+
 };
 typedef void __FlashStringHelper;
 typedef std::string String;
